@@ -1,24 +1,15 @@
 import React, { useEffect, useRef } from "react";
-import lottie from "lottie-web";
-
-//require("./office.json"),
 
 function App() {
   const container = useRef(null);
 
-  useEffect(() => {
-    lottie.loadAnimation({
-      container: container.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: require("./office.json"),
-    });
-  }, []);
+  useEffect(() => {}, []);
   return (
     <div className="App">
-      <h1>React Lottie Demo</h1>
-      <div className="container" ref={container}></div>
+      <h1>React Short Animation</h1>
+      <div className="container">
+        <h3>Coming Soon!</h3>
+      </div>
     </div>
   );
 }

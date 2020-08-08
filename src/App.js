@@ -1,17 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
+import Animations from "./components/Animations";
 
-function App() {
-  const container = useRef(null);
-
-  useEffect(() => {}, []);
+const App = () => {
   return (
-    <div className="App">
-      <h1>React Short Animation</h1>
-      <div className="container">
-        <h3>Coming Soon!</h3>
-      </div>
+    <div>
+      <Animations />
     </div>
   );
-}
+};
 
 export default App;
